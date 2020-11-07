@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // ru - russian, en - english, he - hebrew
-        LocaleHelper.setLocale(this,"he"); // set the apps' language
+        LocaleHelper.setLocale(this,"en"); // set the apps' language
         setContentView(R.layout.activity_main);  // R - the res (resources) folder
 
         MainActivity.TITLE = this.getString(R.string.notification_title);
