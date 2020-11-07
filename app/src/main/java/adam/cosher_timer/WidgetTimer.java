@@ -20,7 +20,8 @@ public class WidgetTimer extends AppWidgetProvider {
     public static WidgetTimer widgetTimer = null;
     public static Context widget_context = null;
     public static AppWidgetManager widget_appWidgetManager = null;
-
+    // TODO: add last 4 elements (<></>) of activity_main.xml to widget_layout.xml
+    // TODO: create button that uses LocaleHelper.setLocale(this,"en"); // set the apps' language
     /**
      * Enable the widget buttons' action (the 'click')
      * and update the widget
