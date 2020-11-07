@@ -109,8 +109,7 @@
                     tools:ignore="VectorDrawableCompat"
                     android:layout_centerHorizontal="true"
                     tools:layout_editor_absoluteX="90dp"
-                    tools:layout_editor_absoluteY="65dp"
-                    android:layout_marginLeft="105dp" />
+                    tools:layout_editor_absoluteY="65dp" />
             </RelativeLayout>
             <RelativeLayout
                 android:paddingVertical="2dp"
@@ -129,8 +128,7 @@
                     tools:ignore="VectorDrawableCompat"
                     android:layout_centerHorizontal="true"
                     tools:layout_editor_absoluteX="90dp"
-                    tools:layout_editor_absoluteY="65dp"
-                    android:layout_marginLeft="105dp" />
+                    tools:layout_editor_absoluteY="65dp" />
             </RelativeLayout>
         </LinearLayout>
     </RelativeLayout>
