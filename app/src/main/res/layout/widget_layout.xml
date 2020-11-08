@@ -56,20 +56,20 @@
                 android:layout_marginBottom="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
+
                 <ImageButton
                     android:id="@+id/start_clock_widget"
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginStart="105dp"
-                    android:background="@null"
-                    app:srcCompat="@drawable/play"
+                    android:layout_marginLeft="105dp"
+                    android:background="@drawable/play"
                     tools:ignore="VectorDrawableCompat"
-                    android:layout_centerHorizontal="true"
                     tools:layout_editor_absoluteX="90dp"
-                    tools:layout_editor_absoluteY="65dp"
-                    android:layout_marginLeft="105dp" />
-                <!--                    android:onClick="start_timer"-->
+                    tools:layout_editor_absoluteY="65dp" />
 
             </RelativeLayout>
             <RelativeLayout
@@ -83,8 +83,7 @@
                     android:layout_height="60dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginStart="105dp"
-                    android:background="@null"
-                    app:srcCompat="@drawable/pause"
+                    android:background="@drawable/pause"
                     tools:ignore="VectorDrawableCompat"
                     android:layout_centerHorizontal="true"
                     tools:layout_editor_absoluteX="90dp"
