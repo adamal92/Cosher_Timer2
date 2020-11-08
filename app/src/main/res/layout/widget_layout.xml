@@ -3,8 +3,12 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
 
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="15dp"
+    android:background="@drawable/bg">
+<!--
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="99dp">
@@ -39,4 +43,81 @@
         android:text="@string/done"
         android:textColor="#000000"
         android:textSize="30sp"/>
+        -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/start_clock_widget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="105dp"
+                    android:background="@null"
+                    app:srcCompat="@drawable/play"
+                    tools:ignore="VectorDrawableCompat"
+                    android:layout_centerHorizontal="true"
+                    tools:layout_editor_absoluteX="90dp"
+                    tools:layout_editor_absoluteY="65dp"
+                    android:layout_marginLeft="105dp" />
+                <!--                    android:onClick="start_timer"-->
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:paddingVertical="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <ImageButton
+                    android:id="@+id/stop_clock_widget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="105dp"
+                    android:background="@null"
+                    app:srcCompat="@drawable/pause"
+                    tools:ignore="VectorDrawableCompat"
+                    android:layout_centerHorizontal="true"
+                    tools:layout_editor_absoluteX="90dp"
+                    tools:layout_editor_absoluteY="65dp"
+                    android:layout_marginLeft="105dp" />
+                <!--                    android:onClick="stop_timer"-->
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/timeLeftTv"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/time_left"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+        <TextView
+            android:layout_below="@+id/timeLeftTv"
+            android:layout_marginTop="10dp"
+            android:id="@+id/timer_out_widget"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="@string/done"
+            android:textColor="@color/white"
+            android:textSize="30sp"/>
+    </RelativeLayout>
 </LinearLayout>
